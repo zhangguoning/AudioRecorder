@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onPermisionInValid() {
             //如果没有录音权限
-            String str = "录音被禁用,请在 \r设置-系统-应用-汽车头条-权限管理\r(将录音权限打开)";
+            String str = "录音被禁用,请在 \r设置-系统-应用-AudioRecord-权限管理\r(将录音权限打开)";
             Toast.makeText(MainActivity.this,str,Toast.LENGTH_LONG).show();
         }
     };
