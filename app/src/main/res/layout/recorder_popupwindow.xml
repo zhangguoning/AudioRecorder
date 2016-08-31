@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/window_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/window_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/window_ok_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="确定" />
+
+    </RelativeLayout>
+
+    <com.bjzy.qctt.audiorecord.widget.RippleBackground
+        android:id="@+id/ripple_rl"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="#17abc1"
+        app:rb_duration="2000"
+        app:rb_radius="40dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="3" >
+
+        <com.bjzy.qctt.audiorecord.widget.CircleImageView
+            android:id="@+id/record_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/dialog_sendout_star"
+            android:background="@null"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/window_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="按住说话" />
+</com.bjzy.qctt.audiorecord.widget.RippleBackground>
+   
+
+</RelativeLayout>
