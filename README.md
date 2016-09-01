@@ -5,8 +5,8 @@
 <br/>
 ```java
 ConfigBean.RecorderLocaltion recorderLocaltion = new ConfigBean.RecorderLocaltion();
-        recorderLocaltion.parent = but; //录音器弹出时候出现的位置
-        recorderLocaltion.height = ScreenUtils.getWindowsHight() * 2 / 5; //录音器的宽度
+        recorderLocaltion.parent = but; //录音器弹出时候出现的位置，默认在此空间下方
+        recorderLocaltion.height = ScreenUtils.getWindowsHight() * 2 / 5; //录音器的高度
         ConfigBean.VoiceFileConfig voiceFileConfig = new ConfigBean.VoiceFileConfig(); //录音文件保存路径
         voiceFileConfig.fileName = "voice_temp_" + (new Date().getTime());
         voiceFileConfig.filePath = BaseApplication.CACHE_UPLOAD_VOICE_PATH;
@@ -19,8 +19,8 @@ ConfigBean.RecorderLocaltion recorderLocaltion = new ConfigBean.RecorderLocaltio
                 new RecorderListener() {
                     @Override
                     public void onRecordFinish(File file, int voiceLenght) {
-
                         //录音结束后在此拿到录音MP3文件
+                        
                     }
 
                     @Override
