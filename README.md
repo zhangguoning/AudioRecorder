@@ -1,4 +1,4 @@
-# AudioRecord
+# AudioRecorder
 一个封装好的录音器模块，具有录音、回放、转码（转为MP3格式）功能
 <br/>
 ![](https://github.com/zhangguoning/AudioRecord/raw/master/voice.gif)
